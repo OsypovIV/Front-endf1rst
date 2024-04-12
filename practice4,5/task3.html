@@ -1,0 +1,51 @@
+
+<html lang="en">
+<head>
+    <title> JavaScript</title>
+
+    <script type="text/javascript">
+
+        function findStringOnce(arr) {
+            var obj = {};
+
+            function findStringOnce(arr) {
+    var counts = {};
+    var uniqueElements = [];
+
+    arr.forEach(function(element) {
+        counts[element] = (counts[element] || 0) + 1;
+    });
+
+    Object.keys(counts).forEach(function(key) {
+        if (counts[key] === 1) {
+            uniqueElements.push(key);
+        }
+    });
+
+    return uniqueElements;
+}
+
+            var initialArray = ["First", "Second", "First", "Third", "Fourth", "Fourth" ];
+            var uniqueValues = findStringOnce(initialArray);
+
+            console.log("Исходный массив:", initialArray);
+            console.log("Уникальные элементы:", uniqueValues);
+
+
+            return Object.keys(obj);
+        }
+
+        
+        var initialArr = ["First", "Second", "First", "Third", "Fourth", "Fourth" ];
+
+        var strings = findStringOnce(initialArr);
+
+        console.log("Initial array: " + initialArr.join(', '));
+        console.log("</br>");
+        console.log("Unique elements: " + strings.join(', '));
+
+    </script>
+</head>
+<body>
+</body>
+</html>
