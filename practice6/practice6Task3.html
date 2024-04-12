@@ -24,7 +24,7 @@
                 this.operations[operator] = operationFunction;
             };
             this.calculate = function(expression) {
-            var tokens = expression.match(/\S+/g); // Разделяем строку выражения на токены
+            var tokens = expression.match(/\S+/g); 
             var operand1 = parseFloat(tokens[0]);
             var operator = tokens[1];
             var operand2 = parseFloat(tokens[2]);
